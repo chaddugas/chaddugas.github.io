@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/todo_style.css" type="text/css" media="screen" charset="utf-8">    
+    <link rel="stylesheet" href="../../css/return.css">
+  </head>
+  <body>
+    <a href="../../index.html#projects">
+      <div id="return">
+        <p>Back</p>
+      </div>
+    </a>
+    <div class="container">
+      <p>
+        <label for="new-task">Add Item</label><input id="new-task" type="text" value="...new task"><button>Add</button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks">
+        <li>
+          <input type="checkbox">
+          <label>Make a Task List</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completed-tasks">
+        <li>
+          <input type="checkbox" checked="checked">
+          <label>Demonstrate how it works</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="js/todo_script.js"></script>
+
+  </body>
+</html>

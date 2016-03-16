@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Form</title>
+	<link rel="stylesheet" href="css/form_style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="../../css/return.css">
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="js/form_script.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/form_submit.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <a href="../../index.html#projects">
+    <div id="return">
+      <p>Back</p>
+    </div>
+  </a>
+
+  <form action="#" method="post">
+    <p>
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text">
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" >
+      <span class="formSpan">Enter a password longer than 8 characters</span>
+    </p>
+    <p>
+      <label for="confirm_password">Confirm Password</label>
+      <input id="confirm_password" name="confirm_password" type="password">
+      <span class="formSpan">Your passwords do not match</span>
+    </p>
+    <p>
+      <input type="submit" value="SUBMIT">
+    </p>
+  </form>
+</body>
+</html>
