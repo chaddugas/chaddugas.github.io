@@ -83,6 +83,12 @@
       "css": "stethoscope",
       "code": 59404,
       "src": "fontawesome"
+    },
+    {
+      "uid": "d84a06c5ce6da9ebdc9b0a5cb94db4c4",
+      "css": "heartbeat",
+      "code": 59405,
+      "src": "fontawesome"
     }
   ]
 }
