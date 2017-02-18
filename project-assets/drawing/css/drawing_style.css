@@ -1,0 +1,296 @@
+body
+{
+    font-family: sans-serif;
+
+    background: #384047;
+}
+canvas
+{
+    display: block;
+
+    margin: 50px auto 10px;
+
+    cursor: url(../img/cursor.png) , crosshair;
+
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 4px 0 0 #222;
+}
+.controls
+{
+    overflow: hidden;
+
+    width: 645px;
+    min-height: 60px;
+    margin: 0 auto;
+
+    border-radius: 5px;
+}
+ul
+{
+    float: left;
+
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 20px;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+ul li,
+#newColor,
+#brushSize,
+span
+{
+    display: block;
+
+    width: 54px;
+    height: 54px;
+
+    cursor: pointer;
+
+    border: 0;
+    border-radius: 100%;
+    box-shadow: 0 3px 0 0 #222;
+}
+
+ul li
+{
+    display: inline-block;
+
+    margin: 0 5px 10px;
+}
+
+.eraser
+{
+    border-radius: 10px;
+    background: #fff;
+}
+
+.red
+{
+    background: #fc4c4f;
+}
+
+.blue
+{
+    background: #4fa3fc;
+}
+
+.yellow
+{
+    background: #ecd13f;
+}
+
+.selected
+{
+    width: 40px;
+    height: 40px;
+
+    border: 7px solid rgba(0,0,0,.5);
+}
+
+button
+{
+    font-size: 16px;
+    line-height: 40px;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    color: #fff;
+    outline: none;
+    background: #68b25b;
+    box-shadow: 0 3px 0 0 #6a845f;
+    text-shadow: 0 1px #6a845f;
+}
+
+/* COLOR SELECT */
+
+#revealColorSelect
+{
+    float: left;
+
+    width: 275px;
+    margin: 10px 15px;
+    padding: 5px 20px;
+
+    border: none;
+    border-radius: 5px;
+}
+
+#colorSelect
+{
+    position: relative;
+
+    display: none;
+    float: left;
+    clear: both;
+
+    box-sizing: border-box;
+    width: 275px;
+    height: 225px;
+    margin: 10px 15px;
+    padding: 10px;
+
+    border-radius: 5px;
+    background: #fff;
+}
+
+#colorSelect:after
+{
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+
+    content: ' ';
+    pointer-events: none;
+
+    border: solid transparent;
+    border-width: 10px;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+}
+
+#newColor
+{
+    float: right;
+
+    box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    margin: 40px 0 0;
+
+    border: none;
+    border-radius: 50%;
+    background: #000;
+    box-shadow: none;
+}
+
+#colorSelect .sliders p label
+{
+    display: block;
+}
+
+#colorSelect button
+{
+    float: left;
+
+    box-sizing: border-box;
+    width: 275px;
+    margin: 10px -10px -7px;
+    padding: 5px 10px;
+
+    border: none;
+    border-top: 1px solid #6a845f;
+    border-radius: 0 0 5px 5px;
+}
+
+/* BRUSH OPTIONS */
+
+#revealBrushOptions
+{
+    float: right;
+
+    width: 275px;
+    margin: 10px 15px;
+    padding: 5px 20px;
+
+    border: none;
+    border-radius: 5px;
+}
+
+.option-window
+{
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+#brushOptions
+{
+    position: relative;
+
+    display: none;
+    float: right;
+
+    box-sizing: border-box;
+    width: 275px;
+    margin: 10px 15px;
+    padding: 10px;
+
+    border-radius: 5px;
+    background: #fff;
+}
+
+#brushOptions:after
+{
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+
+    content: ' ';
+    pointer-events: none;
+
+    border: solid transparent;
+    border-width: 10px;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+}
+
+#brushSize
+{
+    width: 10px;
+    height: 10px;
+    margin: 10px auto;
+
+    border: none;
+    border-right: 1px solid rgba(0,0,0,.7);
+    border-bottom: 2px solid rgba(0,0,0,.7);
+    border-radius: 100%;
+    background: #000;
+    box-shadow: none;
+}
+
+#brushOptions .sliders p
+{
+    margin: 0 11%;
+}
+
+/* General Styles */
+
+.sliders p
+{
+    margin: 10px auto;
+
+    vertical-align: middle;
+}
+
+.sliders label
+{
+    font-size: 14px;
+
+    display: inline-block;
+
+    width: 35px;
+    margin: 0 10px 0 0;
+
+    color: #6d574e;
+}
+
+.sliders input
+{
+    position: relative;
+    top: 2px;
+}

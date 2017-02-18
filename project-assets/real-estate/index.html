@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exciting Real Estate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+<header class="row">
+	<div id="logo">
+		<img src="img/logo.png" alt="Company Logo"/>
+	</div>
+	<div id="navBlock">
+		<nav id="social">
+			<a href="" title="Facebook">
+				<img src="img/facebook.svg" alt="Facebook Social Icon" />
+			</a>
+			<a href="" title="Twitter">
+				<img src="img/twitter.svg" alt="Twitter Social Icon" />
+			</a>
+			<a href="" title="LinkedIn">
+				<img src="img/linkedin.svg" alt="LinkedIn Social Icon" />
+			</a>
+			<a href="" title="Google+">
+				<img src="img/googleplus.svg" alt="Google+ Social Icon" />
+			</a>
+		</nav>
+		<nav id="main">
+			<a href="" title="Search Homes">Search</a>
+			<a href="" title="View Neighborhoods">Neighborhoods</a>
+			<a href="" title="Services">Services</a>
+			<a href="" title="About Us">About US</a>
+		</nav>
+	</div>
+</header>
+<section id="banner">
+	<div class="row">
+		<div id="searchTitle">Search</div>
+		<form id="search" method="get" action="index.html">
+			<div class="searchRow">
+				<input id="searchQuery" type="text" name="serchQuery" value="Enter Address, Neighborhood, City, Zip or MLS#" />
+				<div class="go">Find Your Home</div>
+			</div>
+			<div class="searchRow">
+				<select class="searchSelect" name="bedroom">
+					<option disabled selected>Bedrooms</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4+</option>
+				</select>
+				<select class="searchSelect" name="bathrooms">
+					<option disabled selected>Bathrooms</option>
+					<option>1</option>
+					<option>1.5</option>
+					<option>2</option>
+					<option>2.5</option>
+					<option>3+</option>
+				</select>
+				<select class="searchSelect" name="maxPrice">
+					<option disabled selected>Maximum Price</option>
+					<option>$200,000</option>
+					<option>$400,000</option>
+					<option>$600,000</option>
+					<option>$800,000</option>
+					<option>$1,000,000 +</option>
+				</select>
+			</div>
+		</form>
+	</div>
+</section>
+<main class="row">
+	<section id="luxury" class="third">
+		<div class="title">Luxury Living</div>
+		<div class="subTitle">View All Luxury Properties</div>
+		<div class="button">
+			<div class="arrow"></div>
+		</div>
+	</section>
+
+	<section id="commercial" class="third">
+		<div class="title">Commercial Property</div>
+		<div class="subTitle">View All Commercial Properties</div>
+		<div class="button">
+			<div class="arrow"></div>
+		</div>
+	</section>
+
+	<section id="openHouse" class="third">
+		<div class="title">Open Houses</div>
+		<div class="subTitle">View All Open Houses</div>
+		<div class="button">
+			<div class="arrow"></div>
+		</div>
+	</section>
+</main>
+
+<footer class="row">
+	<a class="footerLink first" href="" title="">Search</a>
+	<a class="footerLink" href="" title="">Neighborhoods</a>
+	<a class="footerLink" href="" title="">Services</a>
+	<a class="footerLink" href="" title="">About Us</a>
+	<a class="footerLink" href="" title="">Careers</a>
+	<a class="footerLink" href="" title="">Site Map</a>
+	<a class="footerLink" href="" title="">Terms of Use</a>
+	<a class="footerLink last" href="" title="">Privacy Policy</a>
+	<span>&copy; 2014 All rights reserved.</span>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="script/app.js"></script>
+</body>
+</html>

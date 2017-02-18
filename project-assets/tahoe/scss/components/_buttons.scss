@@ -1,0 +1,30 @@
+.callout {
+	@include text(1.25em, 1, 600);
+	background: $color-prim;
+	margin: 20px 9px 3px;
+	padding: 10px 15px;
+	border-bottom: 3px solid $color-border-darkest;
+	border-radius: $br;
+	display: inline-block;
+	box-shadow: 2px 1px 3px $color-shadow;
+}
+
+a.callout {
+
+    &:link {
+        color: $color-button-default;
+        text-decoration: none;
+    }
+    &:visited {
+        color: $color-button-visited;
+        text-decoration: none;
+    }
+    &:hover {
+        color: $color-button-hover;
+        text-decoration: none;
+    }
+    &:active {
+        color: $color-button-active;
+        text-decoration: none;
+    }
+}
